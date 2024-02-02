@@ -16,7 +16,7 @@ img {
 }
 
 div {
-    width: 60%;
+    width: 900px;
     margin: auto;
     display: block;
 }
@@ -24,4 +24,21 @@ div {
 iframe {
     display: block;
     margin-top: 100px;
+}
+@media (max-width: 900px) {
+    div {
+        width: 300px;
+    }
+    img {
+        float: none;
+    }
+    h1 {
+        width: 300px;
+    }
+}
+
+@media (max-width: 507px) {
+    div {
+        width: 200px;
+    }
 }
