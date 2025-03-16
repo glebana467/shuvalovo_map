@@ -4,49 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шуваловское кладбище</title>
-    <style>
-        img {
-            margin: auto;
-            display: block;
-        }
-        p {
-            font-size: x-large;
-            padding: 0px 50px 0px 50px;
-            text-indent: 50px;
-            text-align: justify;
-        }
-        div {
-            display: table;
-            margin: 10px auto;
-        }
-        h5 {
-         text-align: center;
-        }  
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
 </head>
 <body>
+    <section class="main">
     <div class="remix-app" hash="a2f2277930c76cbf">
         <script src="https://p.interacty.me/l.js" async></script>
     </div>
 
         <!-- LikeBtn.com BEGIN -->
-        <div><span class="likebtn-wrapper" data-lang="ru"></span></div>
-        
-
+        <div class="button"><span class="likebtn-wrapper" data-lang="ru"></span></div>
         <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
         <!-- LikeBtn.com END -->
-    <p>Шуваловское кладбище, одно из самых живописных кладбищ Петербурга, вошло в историю русской литературы, поскольку именно оно описано в стихотворении А. Блока "Над озером". Шуваловское кладбище занимает относительно небольшую площадь - чуть меньше семи гектаров - на юго-восточном берегу Большого Суздальского озера. 
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+        >
+        <script type="module">
+        import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+        import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+        UC.defineLocale('pt', pt);
+        UC.defineComponents(UC);
+        </script>
+        
+        <uc-config
+        locale-name="pt"
+        ctx-name="my-uploader"
+        camera-modes="photo, video"
+        pubkey="bf7b8f0bfea0b3789744"
+        ></uc-config>
+        
+        <uc-file-uploader-minimal
+        ctx-name="my-uploader"
+        class="my-theme"
+        ></uc-file-uploader-minimal>
+    <p class="text">Шуваловское кладбище, одно из самых живописных кладбищ Петербурга, вошло в историю русской литературы, поскольку именно оно описано в стихотворении А. Блока "Над озером". Шуваловское кладбище занимает относительно небольшую площадь - чуть меньше семи гектаров - на юго-восточном берегу Большого Суздальского озера. 
         Возникновение кладбища относится к 1758-му году, когда здесь архитектором Франческо Бартоломео был поставлен небольшой деревянный храм Спаса Нерукотворного Образа, построенный на средства графа Шувалова для его крепостных. Эта церковь сгорела в 1791 году от удара молнии. 
         Сегодня на территории кладбища находится Спасо-Парголовская церковь 1880 года постройки и церковь Александра Невского, построенная в 1886 году. Оба храма возводил инженер-строитель К. А. Кузьмин. 
         После революции Спасо-Парголовская церковь не закрывалась ни на один день и сохранила первоначальную отделку. Церковь Александра Невского с 1930-х гг. была закрыта и только в 1966 г. возвращена верующим. 
         Во время Второй мировой войны на Шуваловском кладбище появились братские могилы, в которых лежат советские воины, павшие в боях за Ленинград. Площадка с братскими захоронениями периода Великой Отечественной войны находится неподалеку от стен Спасо-Парголовской церкви. 
         На Шуваловском кладбище нашли свое упокоение Ольга Пушкина, жена племянника поэта, родственники композитора Римского-Корсакова, основатель тибетской медицины в России Петр Бадмаев, епископ Лужский, ректор Санкт-Петербургских духовных семинарии и академии Симеон, мама Ольги Берггольц, футболисты братья Бутусовы, автор памятника Крунзенштерну архитектор Монигетти,  первая жена А. Грина  В. П. Калицкая, известный тенор Николай Печковский, который когда-то соперничал с Иваном Козловским, капитан советского ледокольного флота Владимир Воронин, писатель Андрей Битов, члены семьи писателя Бианки, режиссер БДТ А. Н. Морозов, командир танковой бригады В. В. Хрустицкий и другие… 
         </p>
-        <hr>
+    </section>
+    <section class="footer">
         <ol>
             <li>Красногородцев С.А. "Из истории нашего города. Шувалово и Озерки". Статья. Журн. выр. 1977 // ЦГАЛИ СПб. Фонд Р-527. Опись 1. Дело 186.</li>
             <li>Красногородцев С.А. "По Озеркам", "Шувалово". Тезисы экскурсий, планы туристических маршрутов. Автограф, маш., калька, шарик. ручка, фломастер. 1984–1988 // ЦГАЛИ СПб. Фонд Р-527. Опись 1. Дело 166.</li>
-            
-        </ol> 
+        </ol>
+    </section> 
 </body>
 </html>

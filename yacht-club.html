@@ -4,30 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Яхт-клуб</title>
-    <style>
-        img {
-            display: inline;
-        }
-        .first {
-            margin-left: 50px;
-        }
-        p {
-            font-size: x-large;
-            padding: 0px 50px 0px 50px;
-            text-indent: 50px;
-            text-align: justify;
-        }
-        h5 {
-         text-align: center;
-        }
-        
-        .button {
-            display: table;
-            margin: 10px auto;
-        } 
-    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
 </head>
 <body>
+    <section class="main">
     <div class="remix-app" hash="124eea541e88f765">
         <script src="https://p.interacty.me/l.js" async></script>
     </div>
@@ -36,7 +26,29 @@
 
 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 <!-- LikeBtn.com END -->
-    <p>Шуваловский яхт-клуб занимал  занимал достойное место среди многочисленных яхт-клубов Петербурга. 
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+>
+<script type="module">
+import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+UC.defineLocale('pt', pt);
+UC.defineComponents(UC);
+</script>
+
+<uc-config
+locale-name="pt"
+ctx-name="my-uploader"
+camera-modes="photo, video"
+pubkey="bf7b8f0bfea0b3789744"
+></uc-config>
+
+<uc-file-uploader-minimal
+ctx-name="my-uploader"
+class="my-theme"
+></uc-file-uploader-minimal>
+    <p class="text">Шуваловский яхт-клуб занимал достойное место среди многочисленных яхт-клубов Петербурга. 
         Он возник в 1879 году и обладал своим флагом, вымпелом, формой, сигнальными пушками, гаванью и клубными помещениями. Яхт-клуб обзавелся и собственной электростанцией. 
         Кроме всего прочего, его взял под покровительство великий князь Кирилл Владимирович, поэтому от вступавших в его ряды требовались солидные рекомендации.
         Парусные гонки в яхт-клубе служили любимым зрелищем местных дачников, а особенно дачниц. "Бурлит и волнуется Шуваловское озеро, - писал журнал "Спорт" в июне 1902 года. - 
@@ -45,11 +57,13 @@
         Москвы и Финляндии. В свою очередь, местные любители участвовали в соревнованиях, устраиваемых столичными яхт-клубами на Неве. С конца 80-х годов XIX века шуваловские яхт-клубисты участвовали и в международных соревнованиях.
         Однако яхт-клуб являлся не только центром спортивной жизни, но и занимал первое место среди местных дачных развлечений.
         "Четверги" шуваловского яхт-клуба сделались приманкой как для местных дачников и дачниц, так и для городских гостей. "Все яхт-клубские увеселения носят чисто семейный характер и пользуются неизменным успехом", - замечал один из современников. Здесь устраивались детские праздники, семейно-танцевальные вечера, сюда под вечер стекались многочисленные любители карточной игры, а самую большую известность яхт-клуб получил благодаря проводимым им костюмированным балам-карнавалам.
-    <hr>
+    </p>
+    </section>
+    <section class="footer">
     <ol>
         <li>Александрова Е. Л. Шувалово-Озерки. Путеводитель с историями улиц и домов. - СПб.: Гйоль, 2022. </li>
         <li>Глезеров С. Е. Петербург на север от Невы. М.: ЗАО Центрполиграф, 2004.</li>
     </ol>
-    </p>
+    </section>
 </body>
 </html>

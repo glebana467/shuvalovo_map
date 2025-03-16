@@ -4,35 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гребной кружок "Фортуна"</title>
-    <style>
-        img {
-            margin: auto;
-            display: block;
-       } 
-        p {
-           font-size: x-large;
-           padding: 0px 50px 0px 50px;
-           text-indent: 50px;
-           text-align: justify;
-        }
-        h5 {
-         text-align: center;
-        }
-        div {
-            display: table;
-            margin: 10px auto;
-        } 
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
 </head>
 <body>
-    <img src="photos/фортуна.jpg" alt="">
+    <section class="main">
+    <img src="photos/фортуна.jpg" alt="" style="height: 600px; width: 800px;">
     <h5>Источник фото: spbarchives.ru</h5>
      <!-- LikeBtn.com BEGIN -->
-     <div><span class="likebtn-wrapper" data-lang="ru"></span></div>
+     <div class="button"><span class="likebtn-wrapper" data-lang="ru"></span></div>
 
      <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
      <!-- LikeBtn.com END -->
-     <p>Гребной кружок "Фортуна" располагался в самом конце Старо-Орловской улицы, у речки Каменки. Кружок занимал красивое здание с башенкой и балюстрадой, откуда наблюдали за соревнованиями.
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+     >
+     <script type="module">
+     import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+     import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+     UC.defineLocale('pt', pt);
+     UC.defineComponents(UC);
+     </script>
+     
+     <uc-config
+     locale-name="pt"
+     ctx-name="my-uploader"
+     camera-modes="photo, video"
+     pubkey="bf7b8f0bfea0b3789744"
+     ></uc-config>
+     
+     <uc-file-uploader-minimal
+     ctx-name="my-uploader"
+     class="my-theme"
+     ></uc-file-uploader-minimal>
+     <p class="text">Гребной кружок "Фортуна" располагался в самом конце Старо-Орловской улицы, у речки Каменки. Кружок занимал красивое здание с башенкой и балюстрадой, откуда наблюдали за соревнованиями.
         Здесь находилась "кают-компания", где стояли удобные кресла для отдыха. "Фортуна" располагала своей "флотилией" из двадцати пяти хранившихся в эллингах судов, среди них - восьмерка, несколько
         четверок, двойки и одиночки. По воспоминаниям Сергея Григорьевича Глазова, на протяжении почти всего существования кружка боцманом был швед Гансен, "седой, с красным носом, неопределенного возраста".
         Он жил с женой и детьми в небольшом домике рядом с клубом. Согласно уставу "Фортуны", утвержденному 4 апреля 1881 года, кружок имел целью "распространение охоты к упражненью и уменью управлять гребным судами", а также "способствовать поддержанию здоровья членов кружка". Кружок состоял из членов действительных, соревнователей и почетных. Действительными членами могли быть лица мужского пола всех званий, достигшие совершеннолетия.
@@ -40,9 +51,11 @@
         состоявший из семи членов - председателя, его заместителя (товарища), инструктора, завхоза, казначея, секретаря и одного заседателя. Кружок обладал всеми атрибутами самостоятельности - имел свои печать, флаг, обязательную форму для гребцов: "белый с синим полосатый картуз, белая с синим полосатая фуфайка и белые брюки".
         Гребцы "Фортуны", выступая на различных состязаниях, дважды владели "Невским кубком", победив старинное английское гребное общество "Стрела", а в 1906 году они завоевали кубок лейбгвардии Семеновского полка, учрежденный в ознаменование 200-летия основания Петербурга. Председателем кружка некоторое время являлся А. Н. Калио, считавшийся в начале XX века одним из лучших гребцов России.
      </p>
-     <hr>
+    </section>
+    <section class="footer">
      <ol>
         <li>Глезеров С. Е. Петербург на север от Невы. М.: ЗАО Центрполиграф, 2004.</li>
     </ol>
+</section>
 </body>
 </html>

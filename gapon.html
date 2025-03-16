@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дом, в котором был убит Георгий Гапон</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
     <style>
         img {
             margin: auto;
@@ -11,7 +18,7 @@
         }
         p {
             font-size: x-large;
-            padding: 0px 50px 0px 50px;
+            padding: 0px 0px 0px 0px;
             text-indent: 50px;
             text-align: justify;
             margin-bottom: 0;
@@ -26,9 +33,13 @@
             margin-top: 0px;
             text-indent:50px;
         }
+        .text {
+            padding: 0px 30px 30px 30px;
+        }
     </style>
 </head>
 <body>
+    <section class="main">
     <div class="remix-app" hash="e6d6736830c09dea">
         <script src="https://p.interacty.me/l.js" async></script>
     </div>
@@ -37,14 +48,40 @@
 
 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 <!-- LikeBtn.com END -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+>
+<script type="module">
+import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+UC.defineLocale('pt', pt);
+UC.defineComponents(UC);
+</script>
+
+<uc-config
+locale-name="pt"
+ctx-name="my-uploader"
+camera-modes="photo, video"
+pubkey="bf7b8f0bfea0b3789744"
+></uc-config>
+
+<uc-file-uploader-minimal
+ctx-name="my-uploader"
+class="my-theme"
+></uc-file-uploader-minimal>
+ <div class="text">
     <p>По плану 1879 г. хозяйкой дома на пересечении Варваринской и Ольгинской (ныне Эриванская) улиц была некая Звержинская. Этот дом знаменит тем, что 28 марта 1906 г. в нем произошло убийство священника Георгия Гапона, организатора шествия народа к Зимнему дворцу в Петербурге 9 января 1905 г. События того дня получили в истории название "Кровавое воскресенье". Гапон сотрудничал с революционерами, но был тайным агентом царской охранки. После разоблачения Гапона лидеры партии эсеров решили убить его "за измену" партии, к которой он был близок. Чтобы казнь Гапона не выглядела обычным убийством, продумали целую операцию, как заманить его на снятую заранее дачу в Озерках. Эту задачу взял на себя П. М. Рутенберг, знавший Гапона довольно давно. Требовалось, чтобы Гапон сам предъявил доказательства своей измены, поэтому Рутенберг пригласил Гапона в Озерки якобы для переговоров о своем решении поступить на службу в полицию. Свидетелями откровений Гапона стали рабочие-эсеры, до этого знавшие Гапона и верившие ему. </p>
     <p class="number2">"Один из этих рабочих ожидал Гапона и Рутенберга на ст[анции] Озерки как извозчик, - рассказывал в своих воспоминаниях Борис Викторович Савинков. - Пока они ехали на дачу, он, сидя на козлах, слышал весь разговор Гапона с Рутенбергом и убедился, что Гапон действительно предлагает Рутенбергу поступить на полицейскую службу. То же самое повторилось и на даче. В пустой комнате, за прикрытой дверью, несколько рабочих слышали разговор Рутенберга с Гапоном. Гапон никогда не говорил так цинично, как в этот раз. В конце разговора Рутенберг открыл внезапно дверь и впустил рабочих. Несмотря на мольбы Гапона, рабочие тут же повесили его на крючке от вешалки."</p>
     <p class="number2">В городе из газет вскоре стало известно об исчезновении Гапона. Просочились сведения о том, что его убили, но труп долгое время не могли обнаружить. Спустя месяц после казни, 30 апреля 1906 года, к приставу полицейской части пришла хозяйка дачи в Озерках и сообщила, что еще с конца марта не видела своего постояльца, а потому очень тревожится. Полиция нагрянула на дачу и обнаружила труп Георгия Гапона.</p>
-    <hr>
+</div>
+</section>
+<section class="footer">
     <ol>
         <li>Александрова Е. Л. Шувалово-Озерки. Путеводитель с историями улиц и домов. - СПб.: Гйоль, 2022. </li>
         <li>Глезеров С. Е. Петербург на север от Невы. М.: ЗАО Центрполиграф, 2004.</li>
         <li>Савинков. Б. В. Воспоминания террориста. Л., 1990.</li>
     </ol>
+</section>
 </body>
 </html>

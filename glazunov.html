@@ -4,28 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дача К.И. Глазунова</title>
-    <style>
-        p {
-          font-size: x-large;
-          padding: 0px 50px 0px 50px;
-          text-indent: 50px;
-          text-align: justify;
-       }
-       img {
-           margin: auto;
-           display: block;
-       }
-       h5 {
-        text-align: center;
-       }
-       
-       .button {
-           display: table;
-           margin: 10px auto;
-       } 
-   </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
 </head>
 <body>
+    <section class="main">
     <div class="remix-app" hash="9ef2c8f0e1896c21">
         <script src="https://p.interacty.me/l.js" async></script>
     </div>
@@ -34,16 +22,40 @@
 
 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 <!-- LikeBtn.com END -->
-<p>
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+>
+<script type="module">
+import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+UC.defineLocale('pt', pt);
+UC.defineComponents(UC);
+</script>
+
+<uc-config
+locale-name="pt"
+ctx-name="my-uploader"
+camera-modes="photo, video"
+pubkey="bf7b8f0bfea0b3789744"
+></uc-config>
+
+<uc-file-uploader-minimal
+ctx-name="my-uploader"
+class="my-theme"
+></uc-file-uploader-minimal>
+<p class="text">
     После 1883 года хозяином участка на берегу Верхнего озера стал Константин Ильич Глазунов - известный книгоиздатель, предки которого с 1780-х годов имели книжные лавки в Петербурге и Москве. Его сын Александр Константинович прославился на всю Европу как талантливейший композитор.
     О Первой симфонии тогда еще юного композитора высоко отзывались П. И. Чайковский и В. В. Стасов - идейный вдохновитель "Могучей кучки".
     Глазуновым было написано 8 симфоний. Свою Пятую симфонию он написал на даче в Озерках. Она вызвала
     похвалу его строгого учителя А. Н. Римского-Корсакова: "Вопреки многим, считаю Глазунова первым композитором настоящего времени, и не только у нас, но во всей Европе: говорю о молодом поколении художников".
     Здесь же он начал работу над Шестой симфонией и музыкой к балету "Раймонда", поставленному в 1898 г. в Мариинском театре знаменитым балетмейстером Мариусом Петипа. Глазунов писал из Озерков: "Десять номеров от начала балета я уже придумал и запишу за границею...". 
 </p>
-<hr>
+</section>
+<section class="footer">
 <ol>
     <li>Александрова Е. Л. Шувалово-Озерки. Путеводитель с историями улиц и домов. - СПб.: Гйоль, 2022. </li>
 </ol>
+</section>
 </body>
 </html>

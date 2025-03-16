@@ -4,27 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кружок любителей лыжного спорта "Полярная звезда"</title>
-    <style>
-        p {
-            font-size: x-large;
-            padding: 0px 50px 0px 50px;
-            text-indent: 50px;
-            text-align: justify;
-        }
-        img {
-            margin: auto;
-            display: block;
-        }
-        h5 {
-         text-align: center;
-        }
-        .button {
-            display: table;
-            margin: 10px auto;
-        } 
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
 </head>
 <body>
+    <section class="main">
     <img src="photos/полярная звезда.jpg" alt="">
     <h5>Источник фото: andcvet.narod.ru</h5>
 <!-- LikeBtn.com BEGIN -->
@@ -32,14 +21,38 @@
 
 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 <!-- LikeBtn.com END -->
-   <p>В 1897 году дачный поселок Шувалово стал базой первого в Санкт-Петербурге кружка любителей лыжного спорта "Полярная звезда". Учредителями кружка, утвердившими его устав, являлись почитатели и знатоки лыжного спорта - действительный статский советник А. Е. Кичин, надворный советник С. Я. Утин, дворянин К. К. Тальгрен, инженер путей сообщения Н. Л. Караулов, кассир станции "Удельная" К. Г. Корхонен и др. Всякий раз на зиму для своей штаб-квартиры Правление спортивного кружка "Полярная звезда" снимало дачу на Старо-Орловской улице. Кроме официальных соревнований и гонок на различные дистанции Правление клуба проводило в окрестностях
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+>
+<script type="module">
+import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+UC.defineLocale('pt', pt);
+UC.defineComponents(UC);
+</script>
+
+<uc-config
+locale-name="pt"
+ctx-name="my-uploader"
+camera-modes="photo, video"
+pubkey="bf7b8f0bfea0b3789744"
+></uc-config>
+
+<uc-file-uploader-minimal
+ctx-name="my-uploader"
+class="my-theme"
+></uc-file-uploader-minimal>
+   <p class="text">В 1897 году дачный поселок Шувалово стал базой первого в Санкт-Петербурге кружка любителей лыжного спорта "Полярная звезда". Учредителями кружка, утвердившими его устав, являлись почитатели и знатоки лыжного спорта - действительный статский советник А. Е. Кичин, надворный советник С. Я. Утин, дворянин К. К. Тальгрен, инженер путей сообщения Н. Л. Караулов, кассир станции "Удельная" К. Г. Корхонен и др. Всякий раз на зиму для своей штаб-квартиры Правление спортивного кружка "Полярная звезда" снимало дачу на Старо-Орловской улице. Кроме официальных соревнований и гонок на различные дистанции Правление клуба проводило в окрестностях
     дачных поселков лыжные прогулки, катания с гор на лыжах и санях для любителей зимнего отдыха. На Суздальских озерах под руководством опытных инструкторов все желающие могли освоить технику лыжного бега и спуска с гор на лыжах. За зимние месяцы в иной год лыжники приезжали сюда по 30 раз для соревнований, дальних лыжных прогулок и обучения молодежи.
     Кружок любителей лыжного спорта "Полярная звезда" стал популярным методологическим центром России по организации проведения лыжных гонок, подготовке и обучению спортсменов технике различных видов спорта.
    </p>
-   <hr>
+   </section>
+   <section class="footer">
    <ol>
     <li>Глезеров С. Е. Петербург на север от Невы. М.: ЗАО Центрполиграф, 2004.</li>
     <li>Зуев Г. И. У трех Суздальских озер. 3-е изд., дораб. и доп. - М.: Издательство Центрполиграф, 2011. - 474, [6] с.</li>
-</ol> 
+</ol>
+</section> 
 </body>
 </html>

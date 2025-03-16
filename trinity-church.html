@@ -1,57 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pages_style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Церковь Святой Троицы</title>
-    <style> 
-        p {
-           font-size: x-large;
-           padding: 0px 50px 0px 50px;
-           text-indent: 50px;
-           text-align: justify;
-        }
-        
-        img {
-            margin: auto;
-            display: block;
-        }
-        div {
-           display: flex;
-           gap: 10px;
-           justify-content: space-evenly;
-        }
-        
-        @media (max-width: 1600px) {
-           div {
-              flex-direction: column;
-           }
-        }
-        h5 {
-         text-align: center;
-        }
-        
-        .button {
-            display: table;
-            margin: 10px auto;
-        } 
-        
-        </style>
+ 
+
 </head>
 <body>
-    <div class="remix-app" hash="3c674052efa6b8d3">
-        <script src="https://p.interacty.me/l.js" async></script>
-    </div>
-   <!-- LikeBtn.com BEGIN -->
-   <div class="button"><span class="likebtn-wrapper" data-lang="ru"></span></div>
+    
+    <section class="main">
+        <div class="remix-app" hash="3c674052efa6b8d3">
+            <script src="https://p.interacty.me/l.js" async></script>
+        </div>
+       <!-- LikeBtn.com BEGIN -->
+       <div class="button"><span class="likebtn-wrapper" data-lang="ru"></span></div>
+    
+       <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+       <!-- LikeBtn.com END -->
+       <link
+       rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+     >
+     <script type="module">
+       import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+       import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+       UC.defineLocale('pt', pt);
+       UC.defineComponents(UC);
+     </script>
+     
+     <uc-config
+       locale-name="pt"
+       ctx-name="my-uploader"
+       camera-modes="photo, video"
+       pubkey="bf7b8f0bfea0b3789744"
+     ></uc-config>
+     
+     <uc-file-uploader-minimal
+       ctx-name="my-uploader"
+       class="my-theme"
+     ></uc-file-uploader-minimal>
+    
+        
+        <p class="text">Из-за большого наплыва дачников в Шувалово-Озерки в летнее время верующие уже не могли поместиться в Спасо-Парголовском храме, поэтому в последние годы XIX в. было решено начать строительство новой церкви. Первоначально было задумано строить церковь во имя святых апостолов Петра и Павла на одном из парголовских холмов между Вторым и Третьим Парголовами. Предполагалось, что она по своему плану будет представлять в уменьшенном виде копию храма Христа Спасителя в Москве. Это намерение осуществить не удалось, хотя идея постройки церкви продолжала существовать. Новый храм было решено возвести недалеко от Поклонной горы близ Первого озера на участке земли, приобретенном у графини Е. А. Орловой-Денисовой чиновником домовладельцем Эрастом Леонтьевичем Пигулевским. На нем в 1898 г. с благословения епархии на пожертвования верующих началось строительство часовни по проекту архитектора А. И. Носалевича (1867 - после 1930) и каменной церкви по проекту гражданского инженера А. С. Тиханова, которому жители Озерков предложили составить проект православного храма во имя Пресвятой Троицы "в память священного коронования Их Императорских Величеств". Проект был утвержден в 1900 г. Место, избранное для постройки часовни и храма, было освящено 22 августа 1899 г., и строительство временной деревянной часовни к 14 сентября того же года было закончено. Возведение храма, заложенного 19 мая 1900 г., длилось 4 года, и 9 мая 1904 г. он был освящен во имя Троицы в присутствии Иоанна Кроншдатского. Данная церковь сохранилась до наших дней. Здание церкви было передано властями города, и сейчас в ней располагается Санкт-Петербургская церковь евангельских христиан-баптистов.</p>
+    
+    
+    </section>
 
-   <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-   <!-- LikeBtn.com END -->
-    <p>Из-за большого наплыва дачников в Шувалово-Озерки в летнее время верующие уже не могли поместиться в Спасо-Парголовском храме, поэтому в последние годы XIX в. было решено начать строительство новой церкви. Первоначально было задумано строить церковь во имя святых апостолов Петра и Павла на одном из парголовских холмов между Вторым и Третьим Парголовами. Предполагалось, что она по своему плану будет представлять в уменьшенном виде копию храма Христа Спасителя в Москве. Это намерение осуществить не удалось, хотя идея постройки церкви продолжала существовать. Новый храм было решено возвести недалеко от Поклонной горы близ Первого озера на участке земли, приобретенном у графини Е. А. Орловой-Денисовой чиновником домовладельцем Эрастом Леонтьевичем Пигулевским. На нем в 1898 г. с благословения епархии на пожертвования верующих началось строительство часовни по проекту архитектора А. И. Носалевича (1867 - после 1930) и каменной церкви по проекту гражданского инженера А. С. Тиханова, которому жители Озерков предложили составить проект православного храма во имя Пресвятой Троицы "в память священного коронования Их Императорских Величеств". Проект был утвержден в 1900 г. Место, избранное для постройки часовни и храма, было освящено 22 августа 1899 г., и строительство временной деревянной часовни к 14 сентября того же года было закончено. Возведение храма, заложенного 19 мая 1900 г., длилось 4 года, и 9 мая 1904 г. он был освящен во имя Троицы в присутствии Иоанна Кроншдатского. Данная церковь сохранилась до наших дней. Здание церкви было передано властями города, и сейчас в ней располагается Санкт-Петербургская церковь евангельских христиан-баптистов.</p>
-    <hr>
+ <section class="footer">
     <ol>
         <li>Александрова Е. Л. Шувалово-Озерки. Путеводитель с историями улиц и домов. - СПб.: Гйоль, 2022. </li>
         <li>Объединение церквей Санкт-Петербурга и Ленинградской области Евангельских христиан баптистов. URL: https://ocehb.ru (дата обращения: 23.05.2024)</li>
     </ol>
+ </section>
+
 </body>
 </html>

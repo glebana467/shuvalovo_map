@@ -4,44 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Озерковский лаун-теннис клуб</title>
-    <style>
-        p {
-            font-size: x-large;
-            padding: 0px 50px 0px 50px;
-            text-indent: 50px;
-            text-align: justify;
-        }
-        img {
-            margin: auto;
-            display: block;
-        }
-        h5 {
-         text-align: center;
-        }
-        .button {
-            display: table;
-            margin: 10px auto;
-        } 
-    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
 </head>
 <body>
-    <img src="photos/теннис.jpg" alt="">
+    <section class="main">
+    <img src="photos/теннис.jpg" alt="" style="width: 800px; height: 600px;">
     <h5>Источник фото: andcvet.narod.ru</h5>
 <!-- LikeBtn.com BEGIN -->
 <div class="button"><span class="likebtn-wrapper" data-lang="ru"></span></div>
-
 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 <!-- LikeBtn.com END -->
- <p>В 1900 году в Озерках организовали "Кружок любителей лаун-тенниса". Спортивное общество возникло на основе семейной команды любителей этой игры Кудрявцевых. Здесь, на участке собственной дачи на Александровской улице, 2, начал свою спортивную карьеру будущий многократный чемпион страны и мастер спорта СССР по теннису Евгений Александрович Кудрявцев.
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+>
+<script type="module">
+import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+UC.defineLocale('pt', pt);
+UC.defineComponents(UC);
+</script>
+
+<uc-config
+locale-name="pt"
+ctx-name="my-uploader"
+camera-modes="photo, video"
+pubkey="bf7b8f0bfea0b3789744"
+></uc-config>
+
+<uc-file-uploader-minimal
+ctx-name="my-uploader"
+class="my-theme"
+></uc-file-uploader-minimal>
+ <p class="text">В 1900 году в Озерках организовали "Кружок любителей лаун-тенниса". Спортивное общество возникло на основе семейной команды любителей этой игры Кудрявцевых. Здесь, на участке собственной дачи на Александровской улице, 2, начал свою спортивную карьеру будущий многократный чемпион страны и мастер спорта СССР по теннису Евгений Александрович Кудрявцев.
     В 1911 году "Кружок любителей" перерос в Озерковский лаун-теннис клуб. Его игровые корты располагались на Варваринской улице, 1. Устав теннисного клуба
     строго регламентировал свои цели и задачи, а также нормы поведения его постоянных членов. В нем, в частности, отмечалось: "Клуб имеет целью содействовать развитию и распространению в Озерках игры в лаун-теннис. Общество также может содействовать развитию и других видов
     летнего и зимнего спорта, как футбол, крикет, коньки, лыжи, устраивать состязания, экскурсии, концерты и танцевальные вечера. Не допускается игра на деньги в карты, лото, домино и всякие азартные игры". Четкая организация
     клубной работы осущетствлялась стараниями секретаря Озерковского лаун-теннис клуба прапорщика П. Гаазе, призванного в начале Первой мировой войны 1914 года в действующую армию и погибшего в одном из боев. В 1917 году теннисный клуб в Озерках прекратил свое существование.
  </p>
- <hr>
- <ol>
-    <li>Глезеров С. Е. Петербург на север от Невы. М.: ЗАО Центрполиграф, 2004.</li>
-    <li>Зуев Г. И. У трех Суздальских озер. 3-е изд., дораб. и доп. - М.: Издательство Центрполиграф, 2011. - 474, [6] с.</li>
-</ol> 
+</section>
+<section class="footer">
+    <ol>
+        <li>Глезеров С. Е. Петербург на север от Невы. М.: ЗАО Центрполиграф, 2004.</li>
+        <li>Зуев Г. И. У трех Суздальских озер. 3-е изд., дораб. и доп. - М.: Издательство Центрполиграф, 2011. - 474, [6] с.</li>
+    </ol> 
+</section>
+
 </body>
 </html>

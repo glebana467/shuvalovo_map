@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дом, в котором жил Николай Лесков</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
     <style>
         p {
             font-size: x-large;
-            padding: 0px 50px 0px 50px;
+            padding: 0px 0px 0px 0px;
             text-indent: 50px;
             text-align: justify;
             margin-bottom: 0;
@@ -15,7 +22,8 @@
         img {
             margin: auto;
             display: block;
-            width: 60%;
+            width: 800px;
+            height: 600px;
         }
         h5 {
          text-align: center;
@@ -28,9 +36,14 @@
             margin-top: 0px;
             text-indent:50px;
         }
+        .text {
+            padding: 0px 30px 30px 30px;
+        }
+
     </style>
 </head>
 <body>
+    <section class="main">
     <img src="photos/лесков.jpg" alt="">
     <h5>Источник фото: личный архив</h5>
 <!-- LikeBtn.com BEGIN -->
@@ -38,6 +51,29 @@
 
 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 <!-- LikeBtn.com END -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+>
+<script type="module">
+import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+UC.defineLocale('pt', pt);
+UC.defineComponents(UC);
+</script>
+
+<uc-config
+locale-name="pt"
+ctx-name="my-uploader"
+camera-modes="photo, video"
+pubkey="bf7b8f0bfea0b3789744"
+></uc-config>
+
+<uc-file-uploader-minimal
+ctx-name="my-uploader"
+class="my-theme"
+></uc-file-uploader-minimal>
+ <div class="text">
     <p>
         Летом 1883 г. на даче на Софийской улице "в доме Орлова" жил великий русский писатель Н. С. Лесков. Он в письме А. Н. Толиверовой 28 июня сообщал: "Живу я, как говорят, "як горох при дороге: кто мимо идет, тот и дернет"...хандры не чувствую... Дача у меня хорошая... Есть купальня..., обширный и роскошный вид и тенистые террасы". Его посетителями были жившие поблизости литератор и публицист В. О. Михневич, автор исторических романов Е. П. Карнович, драматург и издатель Н. А. Лейкин, поэт-"искровец" Д. Д. Минаев, этнограф и писатель, почетный академик С. В. Максимов и др. Литератор П. К. Мартьянов так вспоминал
         свое посещение Лескова на шуваловской даче: "В 1883 году, когда Лесков проводил лето в Шувалове, а Минаев, разойдясь с женой, поселился у Н. С. Курочкина, жившего на даче на Парголовском шоссе, я часто посещал их обоих, и они бывали у меня. Николай Семенович тогда не посвящал еще всего себя всецело мистицизму, вегетарианизму и толстовщине, а жил просто, как живут
@@ -50,11 +86,14 @@
        положила конец развитию счастливого уголка, и "Шувалово" зажило буржуазною жизнью. Ни елагинский пуант, ни крестовский яхт-клуб с его гонками, ни новодеревенские театры-вертепы, ни Павловский
        вокзал, ни Петергофские и Царскосельские скачки не нарушают здесь мирного сна дачника, желающего восстановления сил, свободы и покоя: все далеко и несподручно. Здесь можно только гулять, купаться, удить рыбу и кататься на лодке. О театре и музыке, стоящих здесь, теперь, на невысокой степени развития, даже не говорят".  
     </p>
-    <hr>
+</div>
+</section>
+<section class="footer">
     <ol>
         <li>Александрова Е. Л. Шувалово-Озерки. Путеводитель с историями улиц и домов. - СПб.: Гйоль, 2022. </li>
         <li>Зелянина Г. "Шуваловский маклер". Мартьянов // Шувалово-Озерки. Вести, 2020, № 5.</li>
         <li>Лесков А. Жизнь Николая Лескова, М., 1954.</li>
     </ol>
+</section>    
 </body>
 </html>

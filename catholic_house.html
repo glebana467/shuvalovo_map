@@ -4,62 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дача Г. С. Войницкого</title>
-    <style>
-         img {
-            margin: auto;
-            display: block;
-       } 
-        p {
-           font-size: x-large;
-           padding: 0px 50px 0px 50px;
-           text-indent: 50px;
-           text-align: justify;
-        }
-        
-        
-        div {
-           display: flex;
-           gap: 10px;
-           justify-content: space-evenly;
-        }
-        
-        @media (max-width: 1600px) {
-           div {
-              flex-direction: column;
-           }
-        }
-        .button {
-            display: table;
-            margin: 10px auto;
-        }  
-        h5 {
-         text-align: center;
-        }
-        
-        
-        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
 </head>
 <body>
+   <section class="main">
    <img src="photos/шумп2.jpg" alt="">
    <h5>Источник фото: spbarchives.ru</h5>
-
    <!-- LikeBtn.com BEGIN -->
    <div class="button"><span class="likebtn-wrapper" data-lang="ru"></span></div>
-
    <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
    <!-- LikeBtn.com END -->
-   <p>На склонах восточного берега Среднего озера генерал Генрих Станиславович Войницкий - член правления «Товарищества …», приобрел несколько участков для строительства дачных домов, разных по площади и благоустройству. Г.С. Войницкий – профессор, специалист по отоплению и вентиляции, устроивший в 1870-х гг. оригинальную систему отопления и вентиляции в Зимнем дворце, на принадлежавших ему дачах никогда не жил, они были построены для сдачи в наём.
+   <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+   >
+   <script type="module">
+   import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+   import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+   UC.defineLocale('pt', pt);
+   UC.defineComponents(UC);
+   </script>
+   
+   <uc-config
+   locale-name="pt"
+   ctx-name="my-uploader"
+   camera-modes="photo, video"
+   pubkey="bf7b8f0bfea0b3789744"
+   ></uc-config>
+   
+   <uc-file-uploader-minimal
+   ctx-name="my-uploader"
+   class="my-theme"
+   ></uc-file-uploader-minimal>
+   <p class="text">На склонах восточного берега Среднего озера генерал Генрих Станиславович Войницкий - член правления «Товарищества …», приобрел несколько участков для строительства дачных домов, разных по площади и благоустройству. Г.С. Войницкий – профессор, специалист по отоплению и вентиляции, устроивший в 1870-х гг. оригинальную систему отопления и вентиляции в Зимнем дворце, на принадлежавших ему дачах никогда не жил, они были построены для сдачи в наём.
     Вот объявление в газете того времени: «Сдаётся дом на берегу Среднего Суздальского озера. Имеется 15 чистых и 5 людских комнат, отлично отделанных и прекрасно меблированных. В доме имеется 5 больших балконов, также меблированных и убранных цветами, растениями, вазами и драпировками. В дачу проведена вода из собственного водопровода, имеется теплая ванна и ватерклозеты. В парке также имеются фонтан, каскад в несколько кранов. При даче находятся: особая кухня с гладильною, конюшня, оранжерея с растениями для уборки балконов, кегельбан, гимнастика и пр. На озере - купальня, своя большая пристань и лодка - отличный ходок. Цена за летний сезон 1700 рублей».
     Сумма по тем временам более, чем значительная. А если принять к сведению, что малый дворец Шуваловых в Шуваловском парке в тот же период сдавался за 1500 рублей, можно представить комфортабельность и роскошь дач Войницкого.
     Позднее усадьба из трех дач генерала Г. С. Войницкого была выкуплена за 15 000 рублей под Международный приют для бедных и больных девочек римско-католического вероисповедания, основанный в 1896 г. патером Жозефом Шумпом. 
     В приюте воспитывались 40 девочек-сирот в возрасте от 1 года до 16 лет различных национальностей. Для воспитанниц приглашались опытные преподавательницы, знавшие иностранные языки. Детей обучали шитью, вязанию и другим профессиям.
     Во флигеле было убежище для выздоравливающих учительниц французского языка. При приюте в особом здании была устроена каплица, где каждое воскресенье происходило богослужение для жителей ближайших окрестностей.
     В 1917-1920-х гг. дачные дома и особняки по большей части были разрушены и разобраны на дрова. От особняка Г. С. Войницкого до наших дней сохранилась лишь часть каменных лестниц.</p> 
-    <hr>
+   </section>
+   <section class="footer">
     <ol>
       <li>Красногородцев С.А. "Из истории нашего города. Шувалово и Озерки". Статья. Журн. выр. 1977 // ЦГАЛИ СПб. Фонд Р-527. Опись 1. Дело 186.</li>
       <li>Красногородцев С.А. "По Озеркам", "Шувалово". Тезисы экскурсий, планы туристических маршрутов. Автограф, маш., калька, шарик. ручка, фломастер. 1984–1988 // ЦГАЛИ СПб. Фонд Р-527. Опись 1. Дело 166.</li>
-      
+   </section>   
   </ol> 
 </body>
 </html>

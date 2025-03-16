@@ -12,6 +12,11 @@ h2 {
 h4 {
     display: block;
     text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: larger;
 
 }
 .describe {
@@ -62,3 +67,4 @@ iframe {
         width: 200px;
     }
 }
+

@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Музыкальный вокзал «Озерки»</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pages_style.css">
     <style>
         img {
             margin: auto;
@@ -11,7 +18,7 @@
         }
         p {
             font-size: x-large;
-            padding: 0px 50px 0px 50px;
+            
             text-indent: 50px;
             text-align: justify;
         }
@@ -32,10 +39,14 @@
         }
         h5 {
          text-align: center;
-        }    
+        } 
+        .text {
+           padding: 0px 30px; 
+        }   
     </style>
 </head>
 <body>
+    <section class="main">
     <img src="photos/музвокзал.JPG" alt="">
     <h5>Источник фото: spbarchives.ru</h5>
 
@@ -44,6 +55,29 @@
 
 <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 <!-- LikeBtn.com END -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.css"
+>
+<script type="module">
+import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-minimal.min.js';
+import pt from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/locales/file-uploader/ru.js';
+UC.defineLocale('pt', pt);
+UC.defineComponents(UC);
+</script>
+
+<uc-config
+locale-name="pt"
+ctx-name="my-uploader"
+camera-modes="photo, video"
+pubkey="bf7b8f0bfea0b3789744"
+></uc-config>
+
+<uc-file-uploader-minimal
+ctx-name="my-uploader"
+class="my-theme"
+></uc-file-uploader-minimal>
+ <div class="text">
     <p>
             1 июля 1877 года на перешейке между Суздальскими озёрами помпезно открылся деревянный «вокзал» с музыкальной эстрадой, получивший название «Озерки». Слово "вокзал" пришло из Англии, звучало оно там как Vauxhall (Вокс-холл) и означало «зал госпожи по имени Джейн Вокс», которое являлось принадлежавшим ей увеселительным заведением и располагалось в одном из предместий Лондона. У музыкального вокзала разбили сад «Озерки». С этого времени за дачной местностью в районе первого и второго Суздальских озёр это название закрепилось.
     Через два года после открытия музыкального вокзала для удобства публики, приезжающей на концерты, на Финляндской железной дороге открылась новая станция. По проекту Бруно Гранхольма был построен ж/д вокзал Озерки (сгорел в начале 1990-х). Со зданием музыкального вокзала станцию соединяла крытая галерея. Сейчас о ней напоминает только аллея вдоль Среднего Суздальского озера. 
@@ -80,15 +114,19 @@
         Бессмысленно кривится диск.
         
     </p>
+    
 </div>
+<p>Здание Озерковского театра сгорело в 1900 году. Через два года был отстроен новый театр, но уже не такой роскошный, как прежний. Обветшавший Озерковский театр на берегу разобрали в начале 1930-х годов.</p>
 
-<p>Здание Озерковского театра сгорело в 1900 году. Через два года был отстроен новый театр, но уже не такой роскошный, как прежний. Обветшавший Озерковский театр на берегу разобрали в начале 1930-х годов.</p><hr>
+</div>
+</section>
+<section class="footer">
 <ol>
     <li>Блок А. А. Записные записки. 1901-1920 / Под общ. редакцией В. Н. Орлова. М.: Художественная литература, 1965.</li>
     <li>Гусенцова Т. М., Добрынина И. Н. Путешествие по Выборгской стороне. - СПб.: Издательство ОСТРОВ, 2007. - 240 с., илл.</li>
     <li>Орлов В. Н. Жизнь Блока. Гамаюн, птица вещая. М.: Центрполиграф, 2001.</li>
 </ol>
-    
+</section>    
     
 </body>
 </html>
